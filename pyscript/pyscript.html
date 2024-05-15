@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Example</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
+    <script defer type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+</head>
+<body>
+    <button id = "pyBtn" py-click="execute">Run Python Script</button>
+    <button id = "clear" py-click="clear">Clear IMG</button>
+
+    <div id = "inputSpace">
+        <input type="file" id="file-upload">
+    </div>
+
+    <div id = "blank"></div>
+
+    <script type="py" src="./app.py" config="./pyscript.json"></script>
+
+    <label for="Upload a PNG image"></label><input type="file" id="file-upload-pillow">
+    <div id="output_upload_pillow"></div>
+</body>
+</html>
