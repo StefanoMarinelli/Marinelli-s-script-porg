@@ -62,7 +62,7 @@ async def _upload_change_and_show(e):
     print("{} - {} - {}".format(my_image.format, my_image.width, my_image.height))
 
     # PROCESSING ALL'IMMAGINE!
-    my_image = my_image.filter(ImageFilter.EMBOSS).rotate(45, expand=True, fillcolor=(0,100,50)).resize((300,300))
+    my_image = my_image.filter(ImageFilter.EMBOSS).resize((500, 500))
 
     # RISPUTO FUORI L'IMMAGINE
     my_stream = io.BytesIO()
